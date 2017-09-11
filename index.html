@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Melting Space</title>
+
+	<!-- Our CSS -->
+	<link rel='stylesheet' type='text/css' href="css/main.css"/>
+	
+</head>
+
+<body>
+
+	<div id="melting-app">
+		<div class="header">
+			Header
+		</div>
+		<div class="menu">
+			<router-link to="/">Home</router-link>
+			<router-link to="/blog">Blog</router-link>
+			<router-link to="/contact">Contact</router-link>
+		</div>
+		<div class="core">
+			<router-view></router-view>
+		</div>
+		<div class="footer">Footer</div>
+	</div>
+	
+
+	<!-- Libs -->
+	<!--<script type='text/javascript' src="node_modules/vue/dist/vue.min.js"></script>-->
+	<script type='text/javascript' src="node_modules/vue/dist/vue.js"></script>
+	<script type='text/javascript' src="node_modules/vue-router/dist/vue-router.min.js"></script>
+	
+	<!-- Custom -->
+	<script type='text/javascript' src="js/main.js"></script>
+	
+</body>
+</html>
