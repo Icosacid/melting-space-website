@@ -16,6 +16,16 @@ document.addEventListener('DOMContentLoaded', function() {
 							'ex-0-icosacid.png',
 						]
 					},
+					{
+						sourceLink: '',
+						description: 'The beginning of destruction. (cf twin peaks)',
+						sourceImageLink: 'img/ex-1-ref.png',
+						responsePaths: [
+							'',
+							'',
+							'ex-1-icosacid.gif',
+						]
+					},
 				]
 			}
 		}

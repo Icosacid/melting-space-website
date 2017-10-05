@@ -20,22 +20,25 @@
 
 	<div id="melting-app">
 		<div class="header">
+			<h1 class="title"><span>Melting</span>Space</h1>
 			<div class="menu">
-				<p class="menu"><router-link to="/">Home</router-link></p>
-				<p class="menu"><router-link to="/blog">Blog</router-link></p>
-				<p class="menu"><router-link to="/contact">Contact</router-link></p>
+				<p class="menu-tab"><router-link to="/">Home</router-link></p>
+				<p class="menu-tab"><router-link to="/blog">Blog</router-link></p>
+				<p class="menu-tab"><router-link to="/contact">Contact</router-link></p>
 			</div>
 		</div>
 		<div class="core">
 			<router-view></router-view>
 		</div>
-		<div class="footer">Footer</div>
+		<div class="footer">
+			<p>Melting Space @2017</p>
+		</div>
 	</div>
 	
 	<template id="home">
 		<div class="home">
 		
-			<div id="site-description" class="description">
+			<div class="site-description">
 				<p>This page features artistic responses to a common reference. It is a sandbox for meltingspace artists to train their techniques and deepen their artistic expression.</p>
 			</div>
 			
@@ -54,9 +57,9 @@
 				</div>
 
 				<div class="results cols-33">
-					<div><p>jeanf</p><img :src="'img/' + exercise.responsePaths[0]" height="250"></div>
-					<div><p>Yngvesin</p><img :src="'img/' + exercise.responsePaths[1]" height="250"></div>
-					<div><p>Icosacid</p><img :src="'img/' + exercise.responsePaths[2]" height="250"></div>
+					<div><p>jeanf</p><img :src="'img/' + exercise.responsePaths[0]" height="250" alt="Artwork in progress..."></div>
+					<div><p>Yngvesin</p><img :src="'img/' + exercise.responsePaths[1]" height="250" alt="Artwork in progress..."></div>
+					<div><p>Icosacid</p><img :src="'img/' + exercise.responsePaths[2]" height="250" alt="Artwork in progress..."></div>
 				</div>
 				
 			</div>
