@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
 	const UIKitComponent = { template: '<div>UIKit component</div>' }
 	
 	const routes = [
-	  { path: '/', component: HomeComponent },
-	  { path: '/blog', component: BlogComponent },
-	  { path: '/contact', component: ContactComponent },
-	  { path: '/ui-kit', component: UIKitComponent }
+		{ path: '/', component: HomeComponent },
+		{ path: '/blog', component: BlogComponent },
+		{ path: '/contact', component: ContactComponent },
+		{ path: '/ui-kit', component: UIKitComponent }
 	]
 	
 	const router = new VueRouter({
