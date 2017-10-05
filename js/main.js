@@ -5,9 +5,17 @@ document.addEventListener('DOMContentLoaded', function() {
 		template: jQuery('#home').html(),
 		data: function() {
 			return {
-				items: [
-					{ message: 'Hi 1' },
-					{ message: 'Hi 2' }
+				exercises: [
+					{
+						sourceLink: 'http://ravenkwok.com/1194d/',
+						description: 'Spaces and non-spaces working as anti-volumes arranged in a ordrered manner',
+						sourceImageLink: 'http://farm6.staticflickr.com/5467/9809073965_52e39099fa_z.jpg',
+						responsePaths: [
+							'ex-0-jeanf.jpg',
+							'ex-0-yngvesin.gif',
+							'ex-0-icosacid.png',
+						]
+					},
 				]
 			}
 		}

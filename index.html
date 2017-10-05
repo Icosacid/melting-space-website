@@ -36,31 +36,31 @@
 		<div class="home">
 		
 			<div id="site-description" class="description">
-				<p>This page features artistic responses according to a common reference. It is a sandbox for meltinspace artists to train their technique and deepen their artistic expression.</p>
+				<p>This page features artistic responses to a common reference. It is a sandbox for meltingspace artists to train their techniques and deepen their artistic expression.</p>
 			</div>
 			
-			<div class="line">
-				<p class="ref-collapse">Exercise #00</p>
+			<div v-for="(exercise, index) in exercises" class="line">
+				<p class="ref-collapse">Exercise #{{ (index < 10 ? '0' : '') + index }}</p>
 				<div class="ref cols-33">
 					<div>
-						<p><a href="http://ravenkwok.com/1194d/">src/</a></p>
+						<p><a :href="exercise.sourceLink" target="_blank">src/</a></p>
 						<p><b>Description/</b></p>
-						<p>Spaces and non-spaces working as anti-volumes arranged in a ordrered manner</p>
+						<p>{{ exercise.description }}</p>
 					</div>
 					<div>
-						<img src="http://farm6.staticflickr.com/5467/9809073965_52e39099fa_z.jpg">
+						<img :src="exercise.sourceImageLink">
 					</div>
 					<div></div>
 				</div>
 
 				<div class="results cols-33">
-					<div><p>jeanf</p><img src="img/ex-0-jeanf.jpg" height="250"></div>
-					<div><p>Yngvesin</p><img src="img/ex-0-yngvesin.gif" height="250"></div>
-					<div><p>Icosacid</p><img src="img/ex-0-icosacid.png" height="250"></div>
+					<div><p>jeanf</p><img :src="'img/' + exercise.responsePaths[0]" height="250"></div>
+					<div><p>Yngvesin</p><img :src="'img/' + exercise.responsePaths[1]" height="250"></div>
+					<div><p>Icosacid</p><img :src="'img/' + exercise.responsePaths[2]" height="250"></div>
 				</div>
 				
 			</div>
-			<!-- END OF LINE-->
+			
 		</div>
 	</template>
 	
