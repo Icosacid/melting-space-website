@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 						responsePaths: [
 							'ex-0-jeanf.jpg',
 							'ex-0-yngvesin.gif',
-							'ex-0-icosacid.png',
+							'ex-0-icosacid.png'
 						]
 					},
 					{
@@ -23,15 +23,25 @@ document.addEventListener('DOMContentLoaded', function() {
 						responsePaths: [
 							'',
 							'',
-							'ex-1-icosacid.gif',
+							'ex-1-icosacid.gif'
 						]
 					},
+					{
+						sourceLink: '',
+						description: 'Straight despair',
+						sourceImageLink: 'img/ex-2-ref.png',
+						responsePaths: [
+							'',
+							'',
+							''
+						]
+					}
 				]
 			}
 		}
 	}
-	const BlogComponent = { template: '<div>Blog component</div>' }
-	const ContactComponent = { template: '<div>Contact component</div>' }
+	const BlogComponent = { template: jQuery('#blog').html() }
+	const ContactComponent = { template: jQuery('#contact').html() }
 	const UIKitComponent = { template: '<div>UIKit component</div>' }
 	
 	// App routes
@@ -54,23 +64,26 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 	// Details animation with jQuery (had to)
 	jQuery('.ref-collapse').click(function() {
-		var ref = jQuery(this).siblings('.ref');
-		if (ref.hasClass('open')) {
+		var $me = jQuery(this),
+			$myRef = $me.siblings('.ref');
+		if ($me.hasClass('open')) {
 			// Collapse
-			ref.removeClass('open').animate({
+			$me.removeClass('open');
+			$myRef.animate({
 			    opacity: 0
 			}, 150, function() {
-				ref.animate({
+				$myRef.animate({
 				    height: 0
 				}, 250);
 			});
 		}
 		else {
 			// Expand
-			ref.addClass('open').animate({
+			$me.addClass('open');
+			$myRef.animate({
 			    height: 250
 			}, 250, function() {
-				ref.animate({
+				$myRef.animate({
 				    opacity: 1
 				}, 150);
 			});

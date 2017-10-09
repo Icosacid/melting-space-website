@@ -12,7 +12,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
 	<!-- Our CSS -->
-	<link rel='stylesheet' type='text/css' href="css/main.css"/>
+	<link rel='stylesheet' type='text/less' href="less/main.less"/>
+	
+	<!-- Only script in header: less on-the-fly compiler -->
+	<script type='text/javascript' src="node_modules/less/dist/less.min.js"></script>
 	
 </head>
 
@@ -42,8 +45,8 @@
 				<p>This page features artistic responses to a common reference. It is a sandbox for meltingspace artists to train their techniques and deepen their artistic expression.</p>
 			</div>
 			
-			<div v-for="(exercise, index) in exercises" class="line">
-				<p class="ref-collapse">Exercise #{{ (index < 10 ? '0' : '') + index }}</p>
+			<div class="line" v-for="(exercise, index) in exercises">
+				<p class="ref-collapse"><span class="caret"></span>Exercise #{{ (index < 10 ? '0' : '') + index }}</p>
 				<div class="ref cols-33">
 					<div>
 						<p><a :href="exercise.sourceLink" target="_blank">src/</a></p>
@@ -64,6 +67,20 @@
 				
 			</div>
 			
+		</div>
+	</template>
+	
+	
+	<template id="blog">
+		<div class="blog">
+			<p class="coming-soon">Coming soon...</p>
+		</div>
+	</template>
+	
+	
+	<template id="contact">
+		<div class="contact">
+			<p class="coming-soon">Coming soon...</p>
 		</div>
 	</template>
 	
