@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 	// App views
 	const HomeComponent = {
-		template: jQuery('#home').html(),
+		template: jQuery('#home').html()
+	}
+	const BlogComponent = { template: jQuery('#blog').html(),
 		data: function() {
 			return {
 				exercises: [
@@ -40,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		}
 	}
-	const BlogComponent = { template: jQuery('#blog').html() }
 	const ContactComponent = { template: jQuery('#contact').html() }
 	const UIKitComponent = { template: '<div>UIKit component</div>' }
 	

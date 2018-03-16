@@ -34,7 +34,16 @@ h1, h2, h3, h4, h5, h6 {
 	color: white;
 	font-family: 'Inconsolata', monospace;
 }
-		
+h2 {
+	font-size: 1.3rem;
+}
+h3 {
+	font-size: 1.1rem;
+}
+h4 {
+	font-size: 1rem;
+}
+
 /* Layout helpers */
 .cols-33  {
 	font-size: 0;
@@ -146,12 +155,107 @@ h1, h2, h3, h4, h5, h6 {
 	
 	/* Contact view */
 	.contact {
-		
+		border-top: 1px solid rgba(255, 255, 255, 0.5);
+		padding: 1.5rem 0 0 0;
+		min-height: 100%;
+		background-image: url('https://melting.space/wp-content/uploads/2016/09/content-1469616245-welcome-to-a-comet.jpg'); 
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		width: 100%;
+
+		.site-description {
+			width: 40%;
+			margin-left: 30px;
+		}
+
+		.members {
+			width: 40%;
+			margin-left: 30px;
+
+			.cols-50 {			
+				display: inline-block;
+				width: 250px;
+				padding: 1em;
+
+				img {
+					height: 250px;
+					padding: 0;
+				}
+				p {
+				margin: 0;
+				padding: 0;
+				}
+			}
+		}
 	}
 	
 	/* Blog view */
 	.blog {
-		
+		.site-description {
+			width: 25%;
+			margin-left: 30px;
+			text-align: justify;
+		}
+		.line { 
+			width: 100%;
+			padding-top: 1em;
+			
+			p.ref-collapse {
+				border-top: 1px solid rgba(255, 255, 255, 0.5);
+				text-align: left;
+				padding-left: 55px;
+				cursor: pointer;
+				position: relative;
+				
+				&:hover {
+					background: #222;
+				}
+				span.caret {
+					border: transparent solid 10px;
+					border-left: white solid 10px;
+					width: 0px;
+					height: 0px;
+					max-width: 0px;
+					max-height: 0px;
+					position: absolute;
+					left: 25px;
+					top: 14px;
+				}
+				
+				&.open span.caret {
+					border-left: transparent solid 10px;
+					border-top: white solid 10px;
+					left: 20px;
+					top: 19px;
+				}
+			}
+			.ref.cols-33 {
+				text-align: center;
+				align: top;
+				height: 0;
+				opacity: 0;
+				margin-bottom: 7px;
+				
+				img {
+					max-height: 250px;
+					max-width: 100%;
+					margin: 0 10px;
+				}
+				p, a {
+					text-align: right;
+					margin: 0 10px;
+				}
+			}
+			.results.cols-33 {
+				p {
+					padding-left: 30px;
+				}
+				img {
+					color: rgba(255, 255, 255, 0.5);
+					padding: 0 1em;
+				}
+			}
+		}
 	}
 	.contact,
 	.blog {
