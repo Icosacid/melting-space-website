@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 						responsePaths: [
 							'ex-0-jeanf.jpg',
 							'ex-0-yngvesin.gif',
-							'ex-0-icosacid.png'
+							'ex-0-alexandrix.png'
 						]
 					},
 					{
@@ -23,9 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
 						description: 'The beginning of destruction. (cf twin peaks)',
 						sourceImageLink: 'img/ex-1-ref.png',
 						responsePaths: [
+							'ex-1-jeanf.jpg',
 							'',
-							'',
-							'ex-1-icosacid.gif'
+							'ex-1-alexandrix.gif'
 						]
 					},
 					{
