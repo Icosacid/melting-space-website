@@ -70,15 +70,20 @@
 }
 
 /* Layout helpers */
-.cols-33  {
+.cols-33, .cols-50  {
 	font-size: 0;
 	width: 100%;
 	
 	& > * {
 		font-size: 1rem;
-		width: 33.333%;
 		display: inline-block;
 		vertical-align: top;
+	}
+	&.cols-33 > * {
+		width: 33.333%;
+	}
+	&.cols-50 > * {
+		width: 50%;
 	}
 }
 
