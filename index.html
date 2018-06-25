@@ -16,18 +16,40 @@
 	
 	<!-- Only script in header: less on-the-fly compiler -->
 	<script type='text/javascript' src="node_modules/less/dist/less.min.js"></script>
+
+	<!-- Icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+	<link rel="manifest" href="img/icons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 	
 </head>
 
 <body>
 
 	<div id="melting-app">
-		<div class="header">
-			<h1 class="title"><span>Melting</span>Space</h1>
-			<div class="menu">
-				<p class="menu-tab"><router-link to="/">Home</router-link></p>
-				<p class="menu-tab"><router-link to="/blog">Blog</router-link></p>
-				<p class="menu-tab"><router-link to="/contact">Contact</router-link></p>
+		<div class="header flexrow flexstart">
+			<img class="logo-lol" src="img/icons/melting.png" />
+			<div>
+				<h1 class="title"><span>Melting</span>Space</h1>
+				<div class="menu">
+					<p class="menu-tab"><router-link to="/">Home</router-link></p>
+					<p class="menu-tab"><router-link to="/blog">Blog</router-link></p>
+					<p class="menu-tab"><router-link to="/contact">Contact</router-link></p>
+				</div>
 			</div>
 		</div>
 		<div class="core">

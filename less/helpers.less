@@ -1,0 +1,84 @@
+/* Helpers */
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.pointer {
+	cursor: pointer;
+}
+.dotted {
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+
+/* Quick layouting */
+.margin-v-large {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.margin-v {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.margin-v-small {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Flexbox helpers */
+.flexcol {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+
+	.ie & > * {
+		width: 100%; // For IE11
+	}
+}
+.flexrow {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+// Use the following together with either .flexrow or .flexcol
+// For all other flex properties, use directly 'align-self' attribute on child elements
+.flexwrap {
+	flex-wrap: wrap;
+}
+.flexcenter {
+	/* Centers child elements */
+	justify-content: center;
+}
+.flexbetween {
+	/* Max space between child elements */
+	justify-content: space-between;
+}
+.flexstart {
+	/* Pull to left or top */
+	justify-content: flex-start;
+}
+.flexend {
+	/* Pull to right or bottom */
+	justify-content: flex-end;
+}
+
+/* Layout helpers */
+.cols-33  {
+	font-size: 0;
+	width: 100%;
+	
+	& > * {
+		font-size: 1rem;
+		width: 33.333%;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
